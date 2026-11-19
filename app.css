@@ -1,0 +1,340 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #060510;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #e2e8f0;
+}
+
+.custom-navbar {
+    background-color: rgba(6, 5, 16, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 15px 0;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.brand-title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.brand-subtitle {
+    color: #aaa;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-top: 3px;
+}
+
+.custom-navbar .nav-link {
+    color: #aaa;
+    margin: 0 8px;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+    color: white;
+}
+
+.btn-primary-gradient,
+.btn-gradient {
+    background: linear-gradient(135deg, #4f46e5, #3b82f6);
+    color: white;
+    border: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary-gradient {
+    border-radius: 50px;
+    padding: 10px 25px;
+}
+
+.btn-gradient:hover,
+.btn-primary-gradient:hover {
+    background: linear-gradient(135deg, #4338ca, #2563eb);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.custom-toggler {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.hero-section {
+    position: relative;
+    background-color: #060510;
+    color: white;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.hero-glow {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.25), transparent 70%);
+    filter: blur(60px);
+}
+
+.hero-title {
+    font-size: 55px;
+    line-height: 1.2;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #a855f7, #6366f1, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+    color: #94a3b8;
+    font-size: 18px;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.btn-outline-custom {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-outline-custom:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.hero-3d-box {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+model-viewer {
+    width: 100%;
+    height: 100%;
+}
+
+.about-section {
+    background-color: #080f1f;
+    color: white;
+}
+
+.about-section img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+}
+
+.about-section span,
+.text-purple {
+    color: #8b5cf6 !important;
+}
+
+.about-section h2 {
+    font-size: 32px;
+}
+
+.about-section p,
+.about-section small {
+    color: #b8bdc9;
+    line-height: 1.7;
+}
+
+.services-section,
+.projeler-section,
+.ozellikler-section,
+.iletisim-section {
+    background-color: #060510;
+}
+
+.section-subtitle {
+    color: #8b5cf6;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    color: white;
+}
+
+.service-card {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #8b5cf6;
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(139, 92, 246, 0.15);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a855f7;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.service-title {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.service-text {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.service-link {
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.service-link:hover {
+    color: #a855f7;
+}
+
+.proje-card {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.proje-card:hover {
+    transform: translateY(-5px);
+    border-color: #6366f1 !important;
+}
+
+.proje-card img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.ozellik-kart {
+    background-color: rgba(255, 255, 255, 0.02) !important;
+}
+
+.ozellik-kart:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.ozellik-ikon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(99, 102, 241, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iletisim-form,
+.iletisim-bilgi {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.custom-input {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+}
+
+.custom-input::placeholder {
+    color: #777;
+}
+
+.custom-input:focus {
+    border-color: #0d6efd !important;
+    box-shadow: none !important;
+}
+
+.sosyal-icon {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.sosyal-icon:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.site-footer {
+    background-color: #04030a;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a:hover {
+    color: white !important;
+}
+
+@media (max-width: 991px) {
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-3d-box {
+        height: 450px;
+    }
+
+    .custom-navbar .navbar-nav {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 34px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-3d-box {
+        height: 350px;
+    }
+}
